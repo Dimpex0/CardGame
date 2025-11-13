@@ -1,11 +1,6 @@
 import unittest
 
-from Card import Card
-from SilverCard import SilverCard
-from GoldCard import GoldCard
-from WildCard import WildCard
-from Joker import Joker
-from Suit import Suit
+from card_game import Card, Suit, SilverCard, GoldCard, WildCard, Joker, score
 
 
 class CardTests(unittest.TestCase):

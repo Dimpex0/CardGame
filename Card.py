@@ -9,7 +9,7 @@ class Card:
         Suit.WILD: "W"
     }
 
-    RANGS = {
+    RANKS = {
         "2": 2,
         "3": 3,
         "4": 4,
@@ -26,12 +26,12 @@ class Card:
     }
 
     def __init__(self, rang: str | int, suit: Suit):
-        if rang not in Card.RANGS:
+        if rang not in Card.RANKS:
             raise ValueError(f"Invalid card rank: {rang}")
 
         self._rank = rang
         self._suit = suit
-        self._chips = Card.RANGS[rang]
+        self._chips = Card.RANKS[rang]
 
     @property
     def rank(self):
